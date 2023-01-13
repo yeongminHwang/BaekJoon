@@ -30,7 +30,6 @@ public class Ex_24060 {
             System.out.println(-1);
         }
     }
-
     public static void merge_sort(int[] arr, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
