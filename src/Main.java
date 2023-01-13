@@ -1,12 +1,19 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("         ,r'\"7");
-        System.out.println("r`-_   ,'  ,/");
-        System.out.println(" \\. \". L_r'");
-        System.out.println("   `~\\/");
-        System.out.println("      |");
-        System.out.println("      |");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+
+        int N = Integer.parseInt(br.readLine());
+
+        sb.append(N).append('\n');
+        while (N-- > 1) {
+            sb.append(N).append('\n');
+        }
+
+        System.out.println(sb);
     }
 }
