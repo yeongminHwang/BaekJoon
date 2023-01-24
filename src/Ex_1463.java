@@ -20,9 +20,9 @@ public class Ex_1463 {
             if (n % 6 == 0) {
                 dp[n] = Math.min(count_make_one(n - 1), Math.min(count_make_one(n / 3), count_make_one(n / 2))) + 1;
             } else if (n % 3 == 0) {
-                dp[n] = Math.min(count_make_one(n - 1), count_make_one(n / 3)) + 1;
+                dp[n] = Math.min(count_make_one(n / 3), count_make_one(n - 1)) + 1;
             } else if (n % 2 == 0) {
-                dp[n] = Math.min(count_make_one(n - 1), count_make_one(n / 2)) + 1;
+                dp[n] = Math.min(count_make_one(n / 2), count_make_one(n - 1)) + 1;
             } else {
                 dp[n] = count_make_one(n - 1) + 1;
             }
