@@ -5,7 +5,6 @@ import java.io.IOException;
 public class Ex_1904 {
 
     public static int[] dp = new int[1000001];
-    ;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
