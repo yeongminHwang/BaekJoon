@@ -1,9 +1,10 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.ParseException;
 import java.util.StringTokenizer;
 
-public class Ex_25682 {
+public class Ex_25682{
     static BufferedReader br;
     static char[][] board;
     static int N;
