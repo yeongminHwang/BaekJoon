@@ -18,7 +18,7 @@ public class Ex_14501 {
 
         int[] dp = new int[N + 1];
         for (int i = 0; i < N; i++) {
-            if (i + time[i] < N) {
+            if (i + time[i] <= N) {
                 dp[i + time[i]] = Math.max(dp[i + time[i]], dp[i] + price[i]);
             }
             dp[i + 1] = Math.max(dp[i + 1], dp[i]);
