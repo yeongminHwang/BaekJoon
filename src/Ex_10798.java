@@ -19,7 +19,6 @@ public class Ex_10798 {
             for (int i = 0; i < 15; i++) {
                 if (board[i][j] != 0) {
                     bw.write(board[i][j]);
-                } else {
                 }
             }
         }
