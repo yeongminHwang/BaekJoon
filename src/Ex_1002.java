@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 public class Ex_1002 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); //ㅁ
         StringBuilder sb = new StringBuilder();
 
         int tc_size = Integer.parseInt(br.readLine());
