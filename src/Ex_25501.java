@@ -10,14 +10,14 @@ public class Ex_25501 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
 
-        int tc_size = Integer.parseInt(br.readLine());
-
-        for (int i = 0; i < tc_size; i++) {
-            String input = br.readLine();
-            sb.append(isPalindrome(input)).append(" ").append(String.valueOf(recursion_cnt)).append("\n");
+        int N = Integer.parseInt(br.readLine());
+        for (int i = 0; i < N; i++) {
             recursion_cnt = 0;
+            String str = br.readLine();
+            sb.append(isPalindrome(str)).append(" ").append(recursion_cnt).append("\n");
         }
-        System.out.println(sb);
+
+        System.out.println(sb.toString());
     }
 
     public static int isPalindrome(String s) {
@@ -28,10 +28,10 @@ public class Ex_25501 {
         recursion_cnt++;
         if (l >= r) {
             return 1;
-        } else if (s.charAt(l) != s.charAt(r)) {
-            return 0;
-        } else {
-            return recursion(s, l + 1, r - 1);
         }
+        if (s.charAt(l) != s.charAt(r)) {
+            return 0;
+        }
+        return recursion(s, l + 1, r - 1);
     }
 }

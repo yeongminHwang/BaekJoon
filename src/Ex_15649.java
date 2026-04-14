@@ -17,7 +17,7 @@ public class Ex_15649 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
-        arr = new int[M]; // 1 ~ M 인덱스 보기 편하라고
+        arr = new int[M];
         visited = new boolean[N];
 
         dfs(0);
@@ -42,6 +42,5 @@ public class Ex_15649 {
                 visited[i] = false;
             }
         }
-        return;
     }
 }

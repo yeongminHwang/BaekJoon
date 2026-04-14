@@ -40,6 +40,5 @@ public class Ex_15650 {
                 visited[i] = false;
             }
         }
-        return;
     }
 }
